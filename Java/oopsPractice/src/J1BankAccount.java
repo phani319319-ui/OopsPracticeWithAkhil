@@ -22,17 +22,21 @@ public class J1BankAccount {
         public void deposit(double amount){
             balance+= amount;
             System.out.println("amount deposited of "+ amount+ " now balance is "+ balance);
-        }
+    }
 
         public void withdraw(double amount){
-            if((balance-amount)>0)
+            if(balance>=amount){
             balance-=amount;
-            System.out.println("amount withdraw is  "+amount+" remaining balance is"+ balance);
-        }
+            System.out.println("amount withdraw is  "+amount+" remaining balance is "+ balance);
+           }
+        else{
+            System.out.println("Insufficet balance");
+            }
+    }
         public void displayInfo(){
-            System.out.println("account holder name  "+ this.accountHolderName+"account no "+this.accountNo+"balane is  "+balance);
+            System.out.println("account holder name  "+ this.accountHolderName+"  account no "+this.accountNo+"   balane is  "+balance);
 
-        }
+    }
 
 
     }

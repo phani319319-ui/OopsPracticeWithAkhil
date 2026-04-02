@@ -1,16 +1,16 @@
 public class SavingsAccount extends J1BankAccount{
 
-    double intrestRate=0.12;
+    double interestRate=0.12;
 
     @Override
     public void displayInfo(){
         super.displayInfo();
-        System.out.println("intrest rate for this account "+intrestRate);
+        System.out.println("interest rate for this account "+interestRate);
     }
 
     public void applyIntrest(){
-        double intrest =getBalance()*intrestRate;
-         setBalance(getBalance()+intrest);
+        double interest =getBalance()*interestRate;
+         setBalance(getBalance()+interest);
     }
 
     public SavingsAccount(String accountNo, String accountHolderName, double balance){

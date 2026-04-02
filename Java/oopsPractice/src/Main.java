@@ -8,8 +8,8 @@ public class Main {
         // sa.displayInfo();
         // sa.withdraw(1000);
         // sa.applyIntrest();
-//        sa.displayInfo();
-//        sa.deposit(5000);
-//        sa.withdraw(20000);
+       sa.displayInfo();
+       sa.deposit(5000);
+       sa.withdraw(20000);
         }
     }
